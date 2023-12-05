@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ethers } from 'ethers';
+import config from '../config.json';
 
 const Navigation = () => {
     const [walletAddress, setWalletAddress] = useState('');

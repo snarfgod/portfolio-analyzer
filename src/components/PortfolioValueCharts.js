@@ -3,11 +3,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'r
 import { ethers } from 'ethers';
 import config from '../config.json';
 
-// Define the ERC20 contract interface
-const erc20Abi = [
-    "function balanceOf(address owner) view returns (uint256)"
-];
-
 const PortfolioValueChart = ({ walletAddress }) => {
     const [portfolioData, setPortfolioData] = useState([]);
 
